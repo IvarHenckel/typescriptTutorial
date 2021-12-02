@@ -1,0 +1,28 @@
+
+////////////////TYPESCRIPT
+JS är ett superscipt av TS så all valid JS är också valid TS (men inte tvärtom).
+
+TS är egentligen inte ett annat språk utan en extension till JS säger en grabb (men andra formulerar det som ett språk)
+
+TS är statically typed -> wrong types means compile time errors instead of run time errors
+
+
+
+tsconfig.json has the purpose of setting attributes / behaviour of this compiler and the translation.
+
+JS har inte data types (klasser fattar jag det som). Det gör det svårt att utveckla stora system.
+
+//Tools:
+Node har jag redan laddat ned tidigare. " Node JS - an interpreter or running environment for JavaScript that holds many excesses, it requires libraries that can easily be accessed from JavaScript programming."
+npm är en package manager för node. Därav jag enkelt kunde skriva npm install -g typescript
+Med VScode får man automatisk type check man behöver inget plug in ens för TS.
+
+Browsers don't know how to run TS code so a compiler needs to translate TS to JS.
+ -> tsc main.ts kommer att producera main.js (om man inte får kompileringsfel dvs)
+ -> versionen på JS filen blir ES3 vilket är en gammal version så det är säkert att köra på uråldrade browsers med
+    -> med tsc -w kommer tsc transpilea alla filer i src/ mappen (inget filnamn behövs)
+            Dessutom kompilerar det kontinuerligt vi behöver inte slå in kommmandot igen.
+http://typescriptlang.org/ är officiell hemsida
+
+OBS: För JS/TS är Ctrl + SHIFT + I eller "verktyg för programmerare"
+väldigt användbart. Exempelvis för att analysera html Elements eller testa JS i Console som en repl.
