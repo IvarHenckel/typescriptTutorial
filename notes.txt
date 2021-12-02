@@ -26,3 +26,5 @@ http://typescriptlang.org/ är officiell hemsida
 
 OBS: För JS/TS är Ctrl + SHIFT + I eller "verktyg för programmerare"
 väldigt användbart. Exempelvis för att analysera html Elements eller testa JS i Console som en repl.
+
+Too run the file: node dist/main.js (Or just open the html file in browser of course.)

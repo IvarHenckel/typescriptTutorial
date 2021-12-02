@@ -51,7 +51,7 @@ const user3: UserInterface = {
     name: 'Monster',
     age: 32,
     getMessage() {
-        return 'Hello' + name;
+        return 'Hello';// + name;
     }
 }
 
@@ -109,16 +109,16 @@ let someNumber: number = (someString as unknown) as number;
 // He also points out that TS doesn't see markup at all
 // (markup = HTML or XML etc)
 // therefore we have to provide type information for typescript
-const someElement = document.querySelector(".foo");
-console.log("someElement", (someElement as any).value); // This is a bad solution
+// const someElement = document.querySelector(".foo");
+// console.log("someElement", (someElement as any).value); // This is a bad solution
 
-const someBetterElement = document.querySelector(".foo") as HTMLInputElement;
-console.log("someElement", someBetterElement.value); // HTMLInputElement has value but it is not at all as high up the type hierarchy
+// const someBetterElement = document.querySelector(".foo") as HTMLInputElement;
+// console.log("someElement", someBetterElement.value); // HTMLInputElement has value but it is not at all as high up the type hierarchy
 
-someElement.addEventListener('blur', (event) => {
-    const target = event.target as HTMLInputElement
-    console.log('event', target.value);
-});
+// someElement.addEventListener('blur', (event) => {
+//     const target = event.target as HTMLInputElement
+//     console.log('event', target.value);
+// });
 
 //ES6 and forward there is support for classes in JS.
 //TS always has classes
