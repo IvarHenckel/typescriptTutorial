@@ -51,7 +51,7 @@ const user3: UserInterface = {
     name: 'Monster',
     age: 32,
     getMessage() {
-        return 'Hello';// + name;
+        return 'Hello' + name;
     }
 }
 
